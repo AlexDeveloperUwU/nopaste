@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <title>NoPaste</title>
+        <title>NoPaste - No-database paste service</title>
         <link
             rel="stylesheet"
             type="text/css"
@@ -20,7 +20,7 @@ npm/microtip@0.2.2/microtip.min.css
         />
         <link rel="stylesheet" href="style.css" />
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
-        <link rel="canonical" href="https://alexdeveloperuwu.github.io/devpaste/" />
+        <link rel="canonical" href="https://nopaste.ml/" />
         <meta
             name="description"
             property="og:description"
@@ -28,7 +28,7 @@ npm/microtip@0.2.2/microtip.min.css
         />
         <meta property="og:title" content="NoPaste - No-database paste service" />
         <meta property="og:image" content="https://cdn.jsdelivr.net/gh/bokub/nopaste@images/logo.png" />
-        <meta property="og:url" content="https://alexdeveloperuwu.github.io/devpaste/" />
+        <meta property="og:url" content="https://nopaste.ml/" />
         <meta property="og:type" content="website" />
     </head>
     <body class="m-0">
@@ -60,13 +60,14 @@ npm/microtip@0.2.2/microtip.min.css
                     <a
                         href="javascript:void(0)"
                         class="mx-3"
-                        aria-label="Versión Original"
+                        aria-label="Click to know more about NoPaste"
                         data-microtip-position="bottom"
                         role="tooltip"
                         data-micromodal-trigger="description-modal"
-                        >Versión original</a
+                        >About</a
                     >
-                    <a href="https://github.com/bokub/nopaste" rel="noopener" target="_blank" class="mx-3">Versión original</a>
+                    <a href="https://github.com/bokub/nopaste" rel="noopener" target="_blank" class="mx-3">Source</a>
+                </div>
                 <div class="col"></div>
                 <div class="col-auto my-1">
                     <select id="language"></select>
@@ -96,10 +97,10 @@ npm/microtip@0.2.2/microtip.min.css
                 </div>
                 <div class="col-auto">
                     <button class="py-1 px-2 mx-0 my-1" onclick="generateLink('url')" type="button">
-                        Generar link
+                        Generate link
                     </button>
                     <button class="py-1 px-2 mx-1 my-1" onclick="generateLink('markdown')" type="button">
-                        Generar markdown
+                        Generate markdown
                     </button>
                     <button class="py-1 px-2 mx-0 my-1" onclick="generateLink('iframe')" type="button">Embed</button>
                 </div>
@@ -110,7 +111,7 @@ npm/microtip@0.2.2/microtip.min.css
         <footer id="footer" class="shadow-top container-fluid">
             <div class="row my-1">
                 <div class="col mono hide-readonly" id="stats">Length: 0 | Lines: 1</div>
-                <div class="col mono show-readonly">Embed generado por DevPaste</div>
+                <div class="col mono show-readonly">Powered by NoPaste</div>
                 <div class="col-auto mono show-readonly">
                     <a href="javascript:void(0)" onclick="openInNewTab()">
                         <span class="icon-edit"></span>
@@ -122,9 +123,8 @@ npm/microtip@0.2.2/microtip.min.css
         <div id="description-modal" class="modal">
             <div tabindex="-1" data-micromodal-close class="modal-overlay">
                 <div role="dialog" class="modal-content shadow-bottom p-3 m-3" data-micromodal-close>
-                    <h2 class="mt-0">What is DevPaste?</h2>
+                    <h2 class="mt-0">What is NoPaste?</h2>
 
-                    <span class="pink">DevPaste</span> es un fork de NoPaste, un servicio de paste el cual he modificado para poder usarlo en mi web y ofrecérselo a los visitantes de ella<br /><br />
                     <span class="pink">NoPaste</span> is an open-source website similar to Pastebin where you can store any piece of code,
                     and generate links for easy sharing<br /><br />
 
@@ -155,9 +155,9 @@ npm/microtip@0.2.2/microtip.min.css
         <div id="error-modal" class="modal">
             <div tabindex="-1" data-micromodal-close class="modal-overlay">
                 <div role="dialog" class="modal-content shadow-bottom p-3 m-3" data-micromodal-close>
-                    DevPaste no puede descifrar el mensaje<br /><br />
-                    Puede que el link esté mal<br /><br />
-                    Lo sentimos
+                    NoPaste cannot decompress the URL<br /><br />
+                    It's possible that you clicked on an invalid link<br /><br />
+                    Sorry about that
                 </div>
             </div>
         </div>
