@@ -30,7 +30,7 @@ const initCodeEditor = () => {
 
     statsEl = byId('stats');
     editor.on('change', () => {
-        statsEl.innerHTML = `Length: ${editor.getValue().length} |  Lines: ${editor['doc'].size}`;
+        statsEl.innerHTML = `Longitud: ${editor.getValue().length} |  Líneas: ${editor['doc'].size}`;
         hideCopyBar();
     });
 };
@@ -48,7 +48,7 @@ const initLangSelector = () => {
             const language = e.data || { mime: null, mode: null };
             editor.setOption('mode', language.mime);
             CodeMirror.autoLoadMode(editor, language.mode);
-            document.title = e.text && e.text !== 'Plain Text' ? `DevPaste - ${e.text} code snippet` : 'NoPaste';
+            document.title = e.text && e.text !== 'Plain Text' ? `DevPaste - ${e.text} code snippet` : 'DevPaste';
         },
     });
 
