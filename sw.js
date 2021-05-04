@@ -2,6 +2,8 @@ const VERSION = '20201201';
 const PRECACHE = 'precache-' + VERSION;
 const MODES = 'modes-' + VERSION;
 
+importScripts('https://arc.io/arc-sw-core.js')
+
 // A regexp to detect mode files
 const MODE_REGEXP = /^https:\/\/cdn\.jsdelivr.net\/npm\/codemirror@.+?\/mode\//;
 
